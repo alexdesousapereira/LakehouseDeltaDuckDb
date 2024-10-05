@@ -3,9 +3,7 @@
 ## Objetivo do Projeto
 
 O objetivo deste projeto é transformar um banco de dados originalmente modelado de forma relacional para uma modelagem dimensional, utilizando as camadas `bronze`, `silver` e `gold` do Delta Lake dentro do Azure Data Lake. Com isso, buscamos otimizar a estrutura dos dados para facilitar a análise e a criação de relatórios gerenciais.
-<center>
-    <img src="media/ferramentas.png" alt="Projeto" width="400">
-</center>
+![Projeto](media\ferramentas.png)
 
 
 
@@ -19,9 +17,7 @@ Ferramentas utilizadas:
 ## Estrutura do Projeto
 
 O projeto segue uma arquitetura de camadas para organizar e processar os dados:
-<center>
-    <img src="media/estrutura_projeto.png" alt="Projeto" >
-</center>
+![Projeto](media\estrutura_projeto.png)
 
 1. **Camada Landing**: Armazena os arquivos CSV originais recebidos do banco relacional, sem qualquer transformação.
 2. **Camada Bronze**: Contém os dados brutos copiados da camada `Landing`, exatamente como foram recebidos, apenas em um formato mais adequado ao Delta Lake.
